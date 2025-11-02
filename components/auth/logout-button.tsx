@@ -2,7 +2,7 @@
 
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
-import { DropdownMenuItem } from './ui/dropdown-menu';
+import { DropdownMenuItem } from '../ui/dropdown-menu';
 
 export function LogoutButton() {
   const router = useRouter();

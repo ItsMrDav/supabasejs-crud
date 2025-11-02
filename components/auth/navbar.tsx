@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import Link from 'next/link';
 import type { User } from '@supabase/supabase-js';
-import ProfileMenu from '@/components/profile-menu'; // Shown if logged in
-import LoginModal from '@/components/login-modal'; // Shown if logged out
+import ProfileMenu from '@/components/auth/profile-menu'; // Shown if logged in
+import LoginModal from '@/components/auth/login-modal'; // Shown if logged out
 
 export default function Navbar({ initialUser }: { initialUser: User | null }) {
   const supabase = createClient();

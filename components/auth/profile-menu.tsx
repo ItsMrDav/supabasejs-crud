@@ -8,8 +8,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { CurrentUserAvatar } from '@/components/current-user-avatar'; // show the user's avatar (picture or initials)
-import { LogoutButton } from '@/components/logout-button'; // button that signs out user
+import { CurrentUserAvatar } from '@/components/auth/current-user-avatar'; // show the user's avatar (picture or initials)
+import { LogoutButton } from '@/components/auth/logout-button'; // button that signs out user
 import type { User } from '@supabase/supabase-js'; // import the "User" type so TypeScript knows what data looks like
 
 // This component shows the dropdown menu for the logged-in user

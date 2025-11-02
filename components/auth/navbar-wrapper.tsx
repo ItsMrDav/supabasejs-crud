@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
-import Navbar from '@/components/navbar'; // import the Navbar component that shows the top bar
+import Navbar from '@/components/auth/navbar'; // import the Navbar component that shows the top bar
 
 export default async function NavbarWrapper() {
   const supabase = await createClient();

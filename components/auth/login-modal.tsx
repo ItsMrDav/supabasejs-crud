@@ -8,8 +8,8 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/dialog';
-import { LoginForm } from '@/components/login-form';
-import { Button } from './ui/button';
+import { LoginForm } from '@/components/auth/login-form';
+import { Button } from '../ui/button';
 
 export default function LoginModal() {
   return (
