@@ -46,7 +46,9 @@ export default function ListView({ id, title, desc }: ListViewType) {
         {/* Update dialog */}
         <Dialog>
           <DialogTrigger asChild>
-            <PenLine />
+            <Button size="icon-sm">
+              <PenLine />
+            </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
@@ -79,8 +81,8 @@ export default function ListView({ id, title, desc }: ListViewType) {
         {/* Delete button */}
         <AlertDialog>
           <AlertDialogTrigger asChild>
-            <Button>
-              <Trash />
+            <Button size="icon-sm">
+              <Trash size={6} />
             </Button>
           </AlertDialogTrigger>
           <AlertDialogContent>

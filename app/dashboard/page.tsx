@@ -13,7 +13,7 @@ export default async function Dashboard() {
       </div>
 
       {/* Todo List */}
-      {/* {myList.length > 0 ? (
+      {myList && myList.length > 0 ? (
         <ItemGroup className="w-full max-w-xl gap-4">
           {myList.map(task => (
             <ListView key={task.id} {...task} />
@@ -21,7 +21,7 @@ export default async function Dashboard() {
         </ItemGroup>
       ) : (
         <p className="italic">Nothing added to the list</p>
-      )} */}
+      )}
     </div>
   );
 }
